@@ -1,0 +1,111 @@
+html {
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+h1 {
+    font-family: 'billabong';
+    text-align: center;
+    font-size: 13rem;
+    font-weight: 100;
+    margin: 2rem 0;
+    letter-spacing: -1px;
+}
+
+@font-face {
+    font-family: 'billabong';
+    src: url('../fonts/FontsFree-Net-Billabong.ttf');
+}
+
+.photo-grid {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.figure {
+    flex-basis: calc(33.333% - 4rem);
+    border: 1px solid #d3d3d3;
+    padding: 2rem;
+    flex-grow: 1;
+    margin: 0 2rem 2rem 2rem;
+}
+
+.photo {
+    width: calc(100% + 4rem);
+    margin: -2rem 0rem 0rem -2rem
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.remove-button {
+    flex-basis: 48%;
+    line-height: 2;
+    padding: 5px;
+    color: red;
+    border: 2px solid #f2f2f2;
+    font-size: 15px;
+    background-color: white;
+}
+
+.remove-button:active {
+    border: 2px solid lightblue;
+}
+
+.addButton {
+    margin: 20px auto;
+    display:block;
+    padding: 30px;
+    background: url("https://image.flaticon.com/icons/svg/60/60740.svg") center no-repeat;
+    background-size: contain;
+    border: none;
+}
+
+.form {
+    background: white;
+    margin: 0 auto;
+    max-width: 360px;
+    padding: 45px;
+    text-align: center;
+}
+
+.form input {
+    font-family: sans-serif;
+    background: #f2f2f2;
+    width: 100%;
+    border: none;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+    margin: 0 0 15px; 
+}
+
+.postButton {
+    font-family: sans-serif;
+    padding: 10px;
+    border: none;
+    margin: 5px auto;
+    background: cadetblue;
+    color: white;
+    text-align: center;
+    border-radius: 4px;
+    width: 100%;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.postButton:hover {
+    background-color: gray;
+}
+.postButton:active {
+    border: 2px solid black;
+}
